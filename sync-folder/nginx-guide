@@ -1,0 +1,90 @@
+ yum install nginx -y
+Updating Subscription Management repositories.
+Last metadata expiration check: 2:53:47 ago on Sat 18 Mar 2023 02:27:16 PM UTC.
+Dependencies resolved.
+===============================================================================================================================================================================================================================================================
+ Package                                                        Architecture                              Version                                                                    Repository                                                           Size
+===============================================================================================================================================================================================================================================================
+Installing:
+ nginx                                                          x86_64                                    1:1.14.1-9.module+el8.0.0+4108+af250afe                                    rhel-8-for-x86_64-appstream-rpms                                    570 k
+Installing dependencies:
+ gd                                                             x86_64                                    2.2.5-7.el8                                                                rhel-8-for-x86_64-appstream-rpms                                    144 k
+ libXpm                                                         x86_64                                    3.5.12-9.el8_7                                                             rhel-8-for-x86_64-appstream-rpms                                     58 k
+ libwebp                                                        x86_64                                    1.0.0-5.el8                                                                rhel-8-for-x86_64-appstream-rpms                                    273 k
+ nginx-all-modules                                              noarch                                    1:1.14.1-9.module+el8.0.0+4108+af250afe                                    rhel-8-for-x86_64-appstream-rpms                                     24 k
+ nginx-filesystem                                               noarch                                    1:1.14.1-9.module+el8.0.0+4108+af250afe                                    rhel-8-for-x86_64-appstream-rpms                                     24 k
+ nginx-mod-http-image-filter                                    x86_64                                    1:1.14.1-9.module+el8.0.0+4108+af250afe                                    rhel-8-for-x86_64-appstream-rpms                                     35 k
+ nginx-mod-http-perl                                            x86_64                                    1:1.14.1-9.module+el8.0.0+4108+af250afe                                    rhel-8-for-x86_64-appstream-rpms                                     46 k
+ nginx-mod-http-xslt-filter                                     x86_64                                    1:1.14.1-9.module+el8.0.0+4108+af250afe                                    rhel-8-for-x86_64-appstream-rpms                                     34 k
+ nginx-mod-mail                                                 x86_64                                    1:1.14.1-9.module+el8.0.0+4108+af250afe                                    rhel-8-for-x86_64-appstream-rpms                                     64 k
+ nginx-mod-stream                                               x86_64                                    1:1.14.1-9.module+el8.0.0+4108+af250afe                                    rhel-8-for-x86_64-appstream-rpms                                     85 k
+Enabling module streams:
+ nginx                                                                                                    1.14                                                                                                                                                
+
+Transaction Summary
+===============================================================================================================================================================================================================================================================
+Install  11 Packages
+
+Total download size: 1.3 M
+Installed size: 3.3 M
+Downloading Packages:
+(1/11): nginx-all-modules-1.14.1-9.module+el8.0.0+4108+af250afe.noarch.rpm                                                                                                                                                      32 kB/s |  24 kB     00:00    
+(2/11): nginx-1.14.1-9.module+el8.0.0+4108+af250afe.x86_64.rpm                                                                                                                                                                 712 kB/s | 570 kB     00:00    
+(3/11): nginx-mod-http-image-filter-1.14.1-9.module+el8.0.0+4108+af250afe.x86_64.rpm                                                                                                                                           190 kB/s |  35 kB     00:00    
+(4/11): nginx-mod-http-xslt-filter-1.14.1-9.module+el8.0.0+4108+af250afe.x86_64.rpm                                                                                                                                            193 kB/s |  34 kB     00:00    
+(5/11): nginx-mod-stream-1.14.1-9.module+el8.0.0+4108+af250afe.x86_64.rpm                                                                                                                                                       85 kB/s |  85 kB     00:01    
+(6/11): nginx-mod-http-perl-1.14.1-9.module+el8.0.0+4108+af250afe.x86_64.rpm                                                                                                                                                   245 kB/s |  46 kB     00:00    
+(7/11): nginx-filesystem-1.14.1-9.module+el8.0.0+4108+af250afe.noarch.rpm                                                                                                                                                      142 kB/s |  24 kB     00:00    
+(8/11): nginx-mod-mail-1.14.1-9.module+el8.0.0+4108+af250afe.x86_64.rpm                                                                                                                                                        370 kB/s |  64 kB     00:00    
+(9/11): gd-2.2.5-7.el8.x86_64.rpm                                                                                                                                                                                              749 kB/s | 144 kB     00:00    
+(10/11): libwebp-1.0.0-5.el8.x86_64.rpm                                                                                                                                                                                        1.2 MB/s | 273 kB     00:00    
+(11/11): libXpm-3.5.12-9.el8_7.x86_64.rpm                                                                                                                                                                                      303 kB/s |  58 kB     00:00    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                                                                                                          983 kB/s | 1.3 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                                                                                                                                       1/1 
+  Installing       : libXpm-3.5.12-9.el8_7.x86_64                                                                                                                                                                                                         1/11 
+  Installing       : libwebp-1.0.0-5.el8.x86_64                                                                                                                                                                                                           2/11 
+  Installing       : gd-2.2.5-7.el8.x86_64                                                                                                                                                                                                                3/11 
+  Running scriptlet: gd-2.2.5-7.el8.x86_64                                                                                                                                                                                                                3/11 
+  Running scriptlet: nginx-filesystem-1:1.14.1-9.module+el8.0.0+4108+af250afe.noarch                                                                                                                                                                      4/11 
+  Installing       : nginx-filesystem-1:1.14.1-9.module+el8.0.0+4108+af250afe.noarch                                                                                                                                                                      4/11 
+  Installing       : nginx-mod-stream-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                      5/11 
+  Running scriptlet: nginx-mod-stream-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                      5/11 
+  Installing       : nginx-mod-http-image-filter-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                           6/11 
+  Running scriptlet: nginx-mod-http-image-filter-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                           6/11 
+  Installing       : nginx-mod-http-xslt-filter-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                            7/11 
+  Running scriptlet: nginx-mod-http-xslt-filter-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                            7/11 
+  Installing       : nginx-mod-http-perl-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                   8/11 
+  Running scriptlet: nginx-mod-http-perl-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                   8/11 
+  Installing       : nginx-all-modules-1:1.14.1-9.module+el8.0.0+4108+af250afe.noarch                                                                                                                                                                     9/11 
+  Installing       : nginx-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                                10/11 
+  Running scriptlet: nginx-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                                10/11 
+  Installing       : nginx-mod-mail-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                       11/11 
+  Running scriptlet: nginx-mod-mail-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                       11/11 
+  Verifying        : nginx-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                                 1/11 
+  Verifying        : nginx-all-modules-1:1.14.1-9.module+el8.0.0+4108+af250afe.noarch                                                                                                                                                                     2/11 
+  Verifying        : nginx-mod-stream-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                      3/11 
+  Verifying        : nginx-mod-http-image-filter-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                           4/11 
+  Verifying        : nginx-mod-http-xslt-filter-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                            5/11 
+  Verifying        : nginx-mod-http-perl-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                   6/11 
+  Verifying        : nginx-filesystem-1:1.14.1-9.module+el8.0.0+4108+af250afe.noarch                                                                                                                                                                      7/11 
+  Verifying        : nginx-mod-mail-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                                                                                                                                                        8/11 
+  Verifying        : gd-2.2.5-7.el8.x86_64                                                                                                                                                                                                                9/11 
+  Verifying        : libwebp-1.0.0-5.el8.x86_64                                                                                                                                                                                                          10/11 
+  Verifying        : libXpm-3.5.12-9.el8_7.x86_64                                                                                                                                                                                                        11/11 
+Installed products updated.
+
+Installed:
+  gd-2.2.5-7.el8.x86_64                                                                  libXpm-3.5.12-9.el8_7.x86_64                                                   libwebp-1.0.0-5.el8.x86_64                                                           
+  nginx-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                                   nginx-all-modules-1:1.14.1-9.module+el8.0.0+4108+af250afe.noarch               nginx-filesystem-1:1.14.1-9.module+el8.0.0+4108+af250afe.noarch                      
+  nginx-mod-http-image-filter-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64             nginx-mod-http-perl-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64             nginx-mod-http-xslt-filter-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64            
+  nginx-mod-mail-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64                          nginx-mod-stream-1:1.14.1-9.module+el8.0.0+4108+af250afe.x86_64               
+
+Complete!
+[root@vm-vagrant-rhel8-caseslabs home]# systemctl enable nginx
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /usr/lib/systemd/system/nginx.service.

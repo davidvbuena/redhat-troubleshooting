@@ -1,0 +1,3 @@
+adminPassword = redhat12345@
+vault.keystorepwd = vaultkeystorepw
+ssl.password = user12345
